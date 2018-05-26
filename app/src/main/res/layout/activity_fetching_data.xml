@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.fetchingdata.FetchingDataActivity">
+
+    <TextView
+        android:id="@+id/fetching_data_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/fetching_button_background_color_selector"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/fetch_value_button"
+        android:textColor="@color/fetching_button_text_color_selector"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        style="@style/FetchingDataTextView"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/fetching_data_response_code_tw"
+        android:layout_alignParentTop="true"
+        android:text="@string/response_code_parametric_string" />
+
+    <TextView
+        android:layout_below="@id/fetching_data_response_code_tw"
+        style="@style/FetchingDataTextView"
+        android:layout_marginTop="5dp"
+        android:id="@+id/fetching_data_counter_tw"
+        android:text="@string/times_fetched_parametric_string" />
+
+    <FrameLayout
+        android:clickable="false"
+        android:id="@+id/fetching_data_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:focusable="false">
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MVVMSAMPLE</string>
+    <string name="response_code_parametric_string">Response Code: %1$s</string>
+    <string name="times_fetched_parametric_string">Times Fetched: %1$s</string>
+    <string name="fetch_value_button">Fetch Content</string>
+    <string name="network_error_message">A network error occurred!</string>
+</resources>
