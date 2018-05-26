@@ -21,7 +21,7 @@ public class FetchingDataRepositoryTest {
     public void testFetchingData() {
         RepositoryFactory repositoryFactory = new RepositoryFactoryDefault();
         FetchingDataRepository fetchingDataRepository = repositoryFactory.makeFetchingDataRepository();
-        fetchingDataRepository.fetchNewData().blockingSubscribe(
+        fetchingDataRepository.fetchNewDataFromUrl().blockingSubscribe(
                 dataFetched ->
                 {
                     Assert.assertNotNull(dataFetched.getValue());
